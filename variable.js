@@ -1,6 +1,6 @@
 'use strict';
 
-//2. Variable
+//2. Variable (rw : read and write)
 //let (added in ES6 = javascript)
 //block scope (괄호 {} 를 이용한것)=> 블럭 밖에서는 안에 있는 내용을 볼 수 없게 된다. 
 
@@ -20,13 +20,25 @@ console.log(globalName);
 //var (don't ever user this)
 //var hoisting (hoisting? move declaration from bottom to top)
 
-//3. Constants : 한번 할당 하면 값이 절대 바뀌지 않는다. 
+//3. Constants : 한번 할당 하면 값이 절대 바뀌지 않는다. (READ ONLY)
 //Mutable : 값이 계속 변경이 가능함
 //favor immutable data type always for a few reasons:
 //-security (보안상 이유로), thread satety , reduce human mistakes
 
 const daysInWeek =7;
 const maxNumber=5;
+
+//Note!!
+//Immutable data types : premitive types, frozen objects(i.e. object.freeze())
+//Mutable data types : all objects by default are mutable in JS
+//favor immutable data type always for a few reasons:
+// - security (보안상 이유로), 
+// - thread satety 
+// - reduce human mistakes
+
+
+
+
 
 //4. Variable types
 //primitive 타입, single item : number, string, boolean, null, undefind, symbol
